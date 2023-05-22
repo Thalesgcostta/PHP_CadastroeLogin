@@ -8,10 +8,10 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(65deg, rgb(233, 248, 100), rgb(87, 226, 69));
+            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
         }
         .tela-login{
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.6);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -26,7 +26,7 @@
             outline: none;
             font-size: 17px;
         }
-        button{
+        .inputSubmit{
             background-color: dodgerblue;
             border: none;
             padding: 15px;
@@ -35,20 +35,23 @@
             color: white;
             font-size: 15px;
         }
-        button:hover{
+        .inputSubmit:hover{
             background-color: deepskyblue;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
+    <a href="home.php">Voltar</a>
     <div class="tela-login">
     <h1>Login</h1>
-    <input type="text" placeholder="Nome">
+    <form action="testLogin.php" method="POST">
+    <input type="text" name="email" placeholder="Email">
     <br><br>
-    <input type="password" placeholder="Senha">
+    <input type="password" name="senha" placeholder="Senha">
     <br><br>
-    <button>Enviar</button>
+    <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+    </form>
     </div>
 </body>
 </html>

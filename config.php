@@ -1,8 +1,8 @@
 <?php
-$dbHost = 'containers-us-west-54.railway.app';
+$dbHost = 'Localhost';
 $dbUsername = 'root';
-$dbPassword = 'ILmYePblIBW81yMnABaf';
-$dbName = 'railway';
+$dbPassword = '';
+$dbName = 'formulario-thales';
 
 $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
